@@ -1,10 +1,11 @@
 // TODO: Include packages needed for this application
-var inquirer = require("inquirer");
+const path = require("path");
+const inquirer = require("inquirer");
+const generateModule = require("./utils/generateMarkdown");
 const fs= require("fs");
 
 // TODO: Create an array of questions for user input
 const questions = [];
-var inquirer = require("inquirer");
 
 inquirer
   .prompt([
@@ -28,14 +29,14 @@ inquirer
     }, {
         type: "checkbox",
         name: "languages",
-        message: "What languages were used for this project?",
+        message: "What languages were used for this project? \n  (Use the arrows to scroll through possible answers.  Select languages by clicking the space bar.  Press Enter when complete to next question.)",
         choices: ["HTML", "CSS", "JavaScript", "PHP", "Python"],
     }, {
-        type: "input",
+        type: "confirm",
         name: "credits",
         message: "Do you have any citations that need to be credited to this project?",
     }, {
-        type: "confirm",
+        type: "checkbox",
         name: "license",
         message: "Do you wish to add license to this project?",
         choices: ["Apache 2.0", "MIT license", "ISC License"],
@@ -44,25 +45,60 @@ inquirer
         name: "links",
         message: "Do you have any links you would like to add to this project?",
         choices: ["Email", "Github", "linkedIN"]
-    }
+    },
   ])
+  
+  // TODO: Create a function to write README file
+    // function writeToFile(inputName, data) {
+// const writeToFile = (fileName, data) => {
+//     fs.writeFile(fileName + ".md", generateModule(data), function(err){
+//         if (err) {
+//             console.log(err);
+//         }   else {
+//             console.log("Success, you have created a memorable README file!");
+//         }
+//     })
+// }
+
+
+// }
+
+// // TODO: Create a function to initialize app
+// function init() {}
+// const init = () => {
+//     inquirer.prompt(questions)
+//     .then(answers =>
+//         {
+//             writeToFile("README", answers);
+//         })
+//         .catch(error => {
+//             if (error.isTtyError){
+//                 console.log(error.isTtyError);
+//             } else {
+//                 console.log(error);
+//             }
+//         });
+// }
+
+// // Function call to initialize app
+// init();
+
+  
   .then((answers) => {
     // Use user feedback for... whatever!!
+    let userFile = `${answers.inputName.toLowerCase().split(" ").join("")}.json`;
+    console.log(userFile);
+
+    fs.writeFile(userFile, JSON.stringify(answers, null, "\t"), (err) => 
+        err ? console.log(err) : console.log("Success, you have created a memorable README file!")
+        );
+        fs.appendFile( path.generateMarkdown, data,[ options], callback );
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
     } else {
       // Something else went wrong
     }
   });
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();

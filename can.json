@@ -1,0 +1,12 @@
+{
+	"inputName": "Can",
+	"title": "README",
+	"description": "Generate README",
+	"runProject": "answer questions",
+	"languages": [],
+	"credits": true,
+	"license": [
+		"Apache 2.0"
+	],
+	"links": true
+}
