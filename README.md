@@ -25,6 +25,7 @@ Once you have opened the file on VS Code, open up the Integrated Terminal from t
 ## Video Link
 ![Video Link](Assets/READMEgeneratorvid.webm)
 
+
 ## Languages
 HTML,CSS,JavaScript
 
