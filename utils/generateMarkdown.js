@@ -1,18 +1,17 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let licenseBadge = inputName.license;
-  let addedLicense = " "
-  if (licenseBadge === "Apache 2.0") {
-      addedLicense = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg) ${href="https://opensource.org/licenses/Apache-2.0"}`
-  } else if (licenseBadge === "MIT license") {
-      addedLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ${href="https://opensource.org/licenses/MIT"}`
-  } else if (licenseBadge === "ISC License") {
-      addedLicense = `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg) ${href="https://opensource.org/licenses/ISC"}`
-  } else {
-    inputName.license = "N/A"
+  // let licenseBadge = (license);
+  // let addedLicense = " "
+  if (license === "Apache 2.0") {
+       return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+  } if (license === "MIT license") {
+      return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ${href="https://opensource.org/licenses/MIT"}`
+  } if (license === "ISC License") {
+      return `![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg) ${href="https://opensource.org/licenses/ISC"}`
+  } if (license === "None") {
+      return `None`
   }
-  return addedLicense;
 };
 
 // TODO: Create a function that returns the license link
@@ -23,7 +22,17 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license !== "None"){
+    return `## License
+    
+    This project is licensed under ${license}.`
+  } else {
+    return `## License
+    
+    This product is not licensed.`
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -37,7 +46,7 @@ ${data.description};
 
 ## Table of Contents
 - [Descriotion](#description)
-- [Utilize Project](#utilize project)
+- [Utilize Project](#utilize-project)
 - [Languages](#languages)
 - [Credits](#credits)
 - [License](#license)
@@ -46,6 +55,9 @@ ${data.description};
 ## Utilize Project
 ${data.runProject};
 
+## Screenshot
+![Project Screenshot](${data.screenshot});
+
 ## Languages
 ${data.languages};
 
@@ -53,11 +65,12 @@ ${data.languages};
 ${data.credits};
 
 ## License
-${renderLicenseBadge(license)};
+${renderLicenseBadge(data.license)};
 
-##Links
-${data.links}`;
 
+## Links
+
+`;
 }
-// console.log(data);
+
 module.exports = generateMarkdown;
