@@ -56,42 +56,6 @@ const questions = [
     }
   ]
 
-
-// TODO: Create a function to write README file
-//   function writeToFile(data) {
-//     fs.writeFile("README.md", generateMarkdown(data), function(err) => {
-//             err ? console.log(err) : console.log("Success, you have created a memorable README file!"))
-//      } .then((answers) => {
-//     // Use user feedback for... whatever!!
-//     let userFile = `${answers.inputName.toLowerCase().split(" ").join("")}.json`;
-//     console.log(userFile);
-
-//     fs.writeFile(userFile, JSON.stringify(answers, null, "\t"), (err) => 
-//         err ? console.log(err) : console.log("Success, you have created a memorable README file!")
-//         );
-//         // fs.appendFile( path.generateMarkdown, data,[ options], callback );
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
-
-// };
-
-  
-
-// TODO: Create a function to write README file
-//   function writeToFile(data) {
-//     fs.writeFile("README.md", generateMarkdown(data), function(err) =>
-//             err ? console.log(err) : console.log("Success, you have created a memorable README file!"));
-//             // return fs.writeFileSync(path.join, process.cwd(), fileName, data);
-        
-//     }
-
-
-
 // // TODO: Create a function to initialize app
 const init = () => {
     inquirer.prompt(questions)
@@ -101,21 +65,4 @@ const init = () => {
 }
 // Function call to initialize app
 init();
-
-// function init() {
-//     inquirer.prompt(questions)
-//     .then(writeToFile)
-// }
-        // answers =>
-        // {
-        //     fs.writeFile("README.md", generateMarkdown(answers));
-        // })
-        // .catch(error => {
-        //     if (error.isTtyError){
-        //         console.log(error.isTtyError);
-        //     } else {
-        //         console.log(error);
-        //     }
-        
-
 
