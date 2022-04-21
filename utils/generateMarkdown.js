@@ -39,10 +39,10 @@ function generateMarkdown(data) {
   return `
 
 # Title
-${data.title};
+${data.title}
 
 ## Description
-${data.description};
+${data.description}
 
 ## Table of Contents
 - [Descriotion](#description)
@@ -53,22 +53,28 @@ ${data.description};
 - [Links](#links)
 
 ## Utilize Project
-${data.runProject};
+${data.runProject}
 
 ## Screenshot
-![Project Screenshot](${data.screenshot});
+![Project Screenshot](${data.screenshot})
 
 ## Languages
-${data.languages};
+${data.languages}
 
 ## Credits
-${data.credits};
+${data.credits}
 
 ## License
-${renderLicenseBadge(data.license)};
+${renderLicenseBadge(data.license)}
 
 
 ## Links
+
+[Portfolio Link](${data.portfolio})
+
+[Github Link](${data.github})
+
+[Email](${data.email})
 
 `;
 }

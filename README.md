@@ -1,10 +1,10 @@
 
 
 # Title
-jl;kj;
+CA
 
 ## Description
-jlk;jkl;
+CA
 
 ## Table of Contents
 - [Descriotion](#description)
@@ -15,20 +15,26 @@ jlk;jkl;
 - [Links](#links)
 
 ## Utilize Project
-lkj;kl;
+CA
 
 ## Screenshot
-![Project Screenshot](screencapture-github-CanRo2B-09-README-file-Generator-2022-04-20-19_27_04.png);
+![Project Screenshot](Assets/screencapture-github-CanRo2B-09-README-file-Generator-2022-04-20-19_27_04.png)
 
 ## Languages
-CSS;
+HTML,CSS
 
 ## Credits
-kjhl;
+thank you
 
 ## License
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0);
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) https://opensource.org/licenses/MIT
 
 
-##Links
-lkajh;
+## Links
+
+[Portfolio Link](https://github.com/CanRo2B/gitGud)
+
+[Github Link](https://github.com/CanRo2B/gitGud)
+
+[Email](hofe36@hotmail.com)
+

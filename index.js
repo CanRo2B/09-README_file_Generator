@@ -23,9 +23,10 @@ const questions = [
         type: "input",
         name: "runProject",
         message: "How to run or use the Project?",
-    }, {type: "input",
+    }, {
+        type: "input",
         name: "screenshot",
-        message: "Insert screenshot image",
+        message: "Insert screenshot image relative path",
     }, {
         type: "checkbox",
         name: "languages",
@@ -34,7 +35,7 @@ const questions = [
     }, {
         type: "input",
         name: "credits",
-        message: "Do you have any citations that need to be credited to this project?",
+        message: "Insert citations that was used to create this project.",
     }, {
         type: "list",
         name: "license",
@@ -42,9 +43,17 @@ const questions = [
         choices: ["Apache 2.0", "MIT license", "ISC License", "None"],
     }, {
         type: "input",
-        name: "links",
-        message: "Do you have any links you would like to add to this project?",
-    },
+        name: "portfolio",
+        message: "Input Portfolio link",
+    }, {
+        type: "input",
+        name: "github",
+        message: "Input Github link",
+    }, {
+        type: "email",
+        name: "email",
+        message: "Input Email Address",
+    }
   ]
 
 
