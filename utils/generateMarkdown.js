@@ -26,7 +26,7 @@ function renderLicenseSection(license) {
     
     This product is not licensed.`
   }
-}
+};
 
 // TODO: Create a function to generate markdown for README
 // Created Markdown syntax 
