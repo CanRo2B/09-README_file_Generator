@@ -42,6 +42,8 @@ ${data.description}
 ## Table of Contents
 - [Description](#description)
 - [Utilize Project](#utilize-project)
+- [Screenshot](#screenshot)
+- [Video Link](#video-link)
 - [Languages](#languages)
 - [Credits](#credits)
 - [License](#license)
@@ -52,6 +54,9 @@ ${data.runProject}
 
 ## Screenshot
 ![Project Screenshot](${data.screenshot})
+
+## Video Link
+![Video Link](${data.videolink})
 
 ## Languages
 ${data.languages}

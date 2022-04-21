@@ -26,8 +26,12 @@ const questions = [
     }, {
         type: "input",
         name: "screenshot",
-        message: "Insert screenshot image relative path",
+        message: "Insert screenshot image relative path.",
     }, {
+        type: "input",
+        name: "videolink",
+        message: "Insert relative path for your video link in the Assets folder.",
+    },  {
         type: "checkbox",
         name: "languages",
         message: "What languages were used for this project? \n  (Use the arrows to scroll through possible answers.  Select languages by clicking the space bar.  Press Enter when complete to next question.)",
