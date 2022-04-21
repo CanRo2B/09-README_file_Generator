@@ -40,7 +40,7 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents
-- [Descriotion](#description)
+- [Description](#description)
 - [Utilize Project](#utilize-project)
 - [Languages](#languages)
 - [Credits](#credits)
