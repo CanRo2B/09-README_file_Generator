@@ -23,13 +23,13 @@ Once you have opened the file on VS Code, open up the Integrated Terminal from t
 ![Project Screenshot](Assets/screencapture-github-CanRo2B-09-README-file-Generator-blob-main-README-md-2022-04-20-22_37_44.png)
 
 ## Video Link
-![Video Link](https://drive.google.com/file/d/1k4VGH6MjTzOeMn2pynGHGjro0GBhS1-Y/view?usp=sharing)
+![Video Link](Assets/READMEgeneratorvid.webm)
 
 ## Languages
-
+HTML,CSS,JavaScript
 
 ## Credits
-I would like to thank all the people on Discord from the UCF Bootcamp chat channel.
+I would like to thank everyone on Discord from the UCF Bootcamp chat channel.  
 
 ## License
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
