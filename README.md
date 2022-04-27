@@ -23,8 +23,8 @@ Once you have opened the file on VS Code, open up the Integrated Terminal from t
 ![Project Screenshot](Assets/screencapture-github-CanRo2B-09-README-file-Generator-blob-main-README-md-2022-04-20-22_37_44.png)
 
 ## Video Link
-![Video Link](https://drive.google.com/file/d/1exKYRM8MF030ybvoVRh-sBMHrYypcrdH/view?usp=sharing)
-![Gif Video Link](https://drive.google.com/file/d/1J7F8gLv-X0fdK4onsvk3eIP_jG93mgQl/view?usp=sharing)
+(https://drive.google.com/file/d/1exKYRM8MF030ybvoVRh-sBMHrYypcrdH/view?usp=sharing)
+(https://drive.google.com/file/d/1J7F8gLv-X0fdK4onsvk3eIP_jG93mgQl/view?usp=sharing)
 
 ## Languages
 HTML,CSS,JavaScript
