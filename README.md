@@ -1,5 +1,3 @@
-
-
 ## Title
 # Robbins README Generator
 
@@ -24,6 +22,7 @@ Once you have opened the file on VS Code, open up the Integrated Terminal from t
 
 ## Video Link
 (https://drive.google.com/file/d/1exKYRM8MF030ybvoVRh-sBMHrYypcrdH/view?usp=sharing)
+
 ![Gif Video Link](https://drive.google.com/file/d/1J7F8gLv-X0fdK4onsvk3eIP_jG93mgQl/view?usp=sharing)
 
 ## Languages
